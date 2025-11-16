@@ -15,5 +15,5 @@ spec:
 
   syncPolicy:
     automated:
-      selfHearl: true
+      selfHeal: true
       prune: true
