@@ -1,3 +1,7 @@
+global:
+  security:
+    allowInsecureImages: true
+
 rabbitmq:
   replicaCount: 3
   image:
