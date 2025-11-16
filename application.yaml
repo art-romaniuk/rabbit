@@ -13,8 +13,8 @@ spec:
     helm:
       valueFiles:
         - values.yaml
-    volumePermissions:
-      enabled: false
+      volumePermissions:
+        enabled: false
 
   destination:
     server: https://kubernetes.default.svc
