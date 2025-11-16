@@ -1,0 +1,5 @@
+rabbitmq:
+  replicaCount: 3
+  image:
+    repository: bitnamilegacy/rabbitmq
+    tag: 3.8.12
