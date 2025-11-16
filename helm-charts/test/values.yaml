@@ -13,13 +13,13 @@ rabbitmq:
 
   securityContext:
     enabled: true
-    runAsUser: 1001
-    runAsGroup: 1001
-    fsGroup: 1001
+    runAsUser: 0
+    runAsGroup: 0
+    fsGroup: 0
 
   podSecurityContext:
     enabled: true
-    fsGroup: 1001
+    fsGroup: 0
 
   volumePermissions:
     enabled: true
