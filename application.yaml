@@ -12,3 +12,8 @@ psec:
     path: helm-charts
   destination:
     server: https://kubernetes.default.svc
+
+  syncPolicy:
+    automated:
+      selfHearl: true
+      prune: true
