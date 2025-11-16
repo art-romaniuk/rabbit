@@ -11,15 +11,9 @@ rabbitmq:
   persistence:
     enabled: false
 
-  securityContext:
-    enabled: true
-    runAsUser: 0
-    runAsGroup: 0
-    fsGroup: 0
-
-  podSecurityContext:
-    enabled: true
-    fsGroup: 0
-
-  volumePermissions:
-    enabled: true
+resources:
+  limits:
+    memory: 512Mi # Збільште, якщо це можливо у вашому Minikube
+  requests:
+    memory: 256Mi
+    cpu: 100m
