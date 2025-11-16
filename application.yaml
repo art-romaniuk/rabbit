@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: rabbit-argo-application
-  namespace: default
+  namespace: argocd
 spec:
   project: rabbit-argo
 
@@ -12,6 +12,7 @@ spec:
     path: helm-charts
   destination:
     server: https://kubernetes.default.svc
+    namespace: default
 
   syncPolicy:
     automated:
