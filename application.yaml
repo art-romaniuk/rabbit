@@ -4,17 +4,21 @@ metadata:
   name: rabbit-argo-application
   namespace: argocd
 spec:
-  project: rabbit-argo
+  project: default
 
   source:
     repoURL: https://github.com/art-romaniuk/rabbit
-    targetRevision: HEAD
     path: helm-charts/test
+    targetRevision: HEAD
+    helm:
+      valueFiles:
+        - values.yaml
+    volumePermissions:
+      enabled: false
+
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
 
   syncPolicy:
-    automated:
-      selfHeal: true
-      prune: true
+    syncOptions:
+      - Validate=false
