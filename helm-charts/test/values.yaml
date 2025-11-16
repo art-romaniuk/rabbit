@@ -3,7 +3,6 @@ global:
     allowInsecureImages: true
 
 rabbitmq:
-  replicaCount: 3
   image:
     registry: docker.io
     repository: bitnamilegacy/rabbitmq
