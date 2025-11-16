@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: rabbit-argo-application
   namespace: default
-psec:
+spec:
   project: rabbit-argo
 
   source:
