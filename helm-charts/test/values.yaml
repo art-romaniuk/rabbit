@@ -8,3 +8,5 @@ rabbitmq:
     registry: docker.io
     repository: bitnamilegacy/rabbitmq
     tag: 3.8.12
+  volumePermissions:
+    enabled: false
