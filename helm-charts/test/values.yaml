@@ -6,19 +6,3 @@ redis:
   image:
     repository: bitnamilegacy/redis
     tag: 6.0.11
-
-rabbitmq:
-  image:
-    registry: docker.io
-    repository: bitnamilegacy/rabbitmq
-    tag: 3.8.12
-
-  persistence:
-    enabled: false
-
-resources:
-  limits:
-    memory: 512Mi # Збільште, якщо це можливо у вашому Minikube
-  requests:
-    memory: 256Mi
-    cpu: 100m
